@@ -4,13 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    background-color: #eee8e8;
 
 
 }
 
+/* ---------------
+ top banner part
+ --------------- */
 .top-banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -62,11 +68,12 @@ p {
     border-radius: 5px;
     width: 187px;
     height: 56px;
+    transition: width 2s ease-in-out;
 }
 
 #live-button:hover {
-    transform: scale(1.15);
-    box-shadow: 5px 5px 5px lightgrey;
+    width: 300px;
+    color: antiquewhite;
 }
 
 /* -----------------
@@ -104,11 +111,17 @@ Player banner ends here
     height: 34px;
     width: 252px;
     padding: 10px;
+
 }
 
 .tab:hover {
     transform: scale(1.15);
     box-shadow: 5px 5px 5px lightgrey;
+}
+
+.tab a {
+    text-decoration: none;
+    color: #161616;
 }
 
 #highlighted-tab {
@@ -125,15 +138,19 @@ Player banner ends here
 }
 
 .blog {
-    background-color: rgb(178, 188, 214);
+    background-color: #ffffff;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     border-radius: 30px;
     align-items: center;
     align-content: center;
     justify-items: center;
+    padding-top: 10px;
 }
 
+/*---------------------
+ css for "upcoming matches" webpage
+ ------------------------------- */
 
 .countries {
     display: flex;
@@ -158,6 +175,10 @@ h6 {
 
 .blog-details span {
     text-align: center;
+}
+
+.blog-details {
+    padding-left: 10px;
 }
 
 
